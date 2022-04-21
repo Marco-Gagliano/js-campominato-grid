@@ -57,7 +57,10 @@ body{
   color: white;
 }  
 
-.square-easy span, .square-medium span, .square-hard span, .square-ultra-nightmare span {
+.square-easy span, 
+.square-medium span, 
+.square-hard span, 
+.square-ultra-nightmare span {
   display: none;
 }
 
