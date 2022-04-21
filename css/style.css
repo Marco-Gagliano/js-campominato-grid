@@ -1,0 +1,81 @@
+body{
+  font-family: Arial, Helvetica, sans-serif
+}
+.minefield{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #021527;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+}
+
+.square-easy{    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  color: white;
+}  
+
+.square-medium{    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  color: white;
+}  
+
+.square-hard{    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  color: white;
+} 
+
+.square-ultra-nightmare{    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: calc(100% / 15);
+  height: calc(100% / 15);
+  color: white;
+}  
+
+.square-easy span, .square-medium span, .square-hard span, .square-ultra-nightmare span {
+  display: none;
+}
+
+.square-easy.clicked span, 
+.square-medium.clicked span, 
+.square-hard.clicked span, 
+.square-ultra-nightmare.clicked span {
+  display: block;
+}
+
+.square-easy.clicked.even, 
+.square-easy.clicked.odd, 
+.square-medium.clicked.even, 
+.square-medium.clicked.odd, 
+.square-hard.clicked.even, 
+.square-hard.clicked.odd, 
+.square-ultra-nightmare.clicked.even, 
+.square-ultra-nightmare.clicked.odd {
+  background-color: #009C9C;
+}
+
